@@ -13,5 +13,11 @@ public class Prospect {
 		return playerName;
 	}
 	
-	
+	public void setSchool(String s){
+		school = s;
+	}
+
+	public String getSchool(){
+		return school;
+	}
 }
