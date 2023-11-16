@@ -2,6 +2,9 @@
 public class Prospect {
 	private String playerName;
 	private String school;
+
+	
+	
 	
 	
 	public void setName(String n) {
@@ -20,4 +23,5 @@ public class Prospect {
 	public String getSchool(){
 		return school;
 	}
+	
 }
