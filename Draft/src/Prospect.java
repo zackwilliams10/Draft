@@ -6,7 +6,7 @@ public class Prospect {
     private String name;
     private String school;
     private String position;
-    
+    private ArrayList<Prospect> players;
     
     public Prospect(String name, String school, String position) {
             this.name = name;
@@ -14,9 +14,7 @@ public class Prospect {
             this.position = position;
             
         }
-    private static ArrayList<Prospect> generatePlayers() {
-        
-    	ArrayList<Prospect> players = new ArrayList<>();
+    public ArrayList<Prospect> generatePlayers() {
 
         players.add(new Prospect("Caleb Williams", "USC", "QB"));
         
@@ -39,6 +37,10 @@ public class Prospect {
         players.add(new Prospect("Taliese Fuaga", "OSU", "T"));
         
         return players;
+    }
+    
+    public ArrayList<Prospect> getPlayers(){
+    	return players;
     }
     
     public String getName() {
